@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/cbChecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:enabled="false"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/Goodspic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/cbChecked"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/GoodsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/Goodspic"
+        android:lines="2"
+        android:text="cnmcnmcncm" />
+
+    <TextView
+        android:id="@+id/Goodspre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/Goodspic"
+        android:text="价格"
+        android:textSize="14dp" />
+
+    <com.umeng.soexample.shopcar.control.AddSumView
+        android:id="@+id/addsum"
+        android:layout_width="135dp"
+        android:layout_height="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/GoodsName"
+        android:layout_marginRight="2dp" />
+
+</RelativeLayout>
